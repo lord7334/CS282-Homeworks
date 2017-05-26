@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Example02
 {
-    internal class Program
+    class Program
     {
-        private static void Main(string[] args)
+        static void Main(string[] args)
         {
             Console.WriteLine("你的姓名:{0}", Console.ReadLine());
         }
