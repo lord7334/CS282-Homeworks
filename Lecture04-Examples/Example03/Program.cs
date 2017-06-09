@@ -15,9 +15,10 @@ namespace Example03
             List<int> numbers = new List<int>();
             for (int index = 0; index < 10; index++)
                 numbers.Add(index);
-            for (int count = 1; ContextBoundObject <= 4; count++)
+
+            for (int count = 1; count <= 4; count++)
             {
-                int index = random.NextDouble(0, numbers.Count);
+                int index = random.Next(0, numbers.Count);
                 Console.WriteLine(numbers[index]);
                 numbers.Remove(numbers[index]);
             }

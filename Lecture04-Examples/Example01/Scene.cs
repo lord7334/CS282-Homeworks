@@ -43,6 +43,8 @@ namespace Example01
                 return global::Example01.Properties.Resources._9;
             else
                 return global::Example01.Properties.Resources._10;
+
+            // this.TargetPicture.Image = (Image)Properties.Resources.ResourceManager.GetObject("_" + this.Number);
         }
 
         public void ChangeTo(int target)

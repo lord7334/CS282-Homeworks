@@ -22,12 +22,12 @@ namespace Example01
 
         private void yesButton_Click(object sender, EventArgs e)
         {
-            this.MakeDecision.ChangeTo(1);
+            this.MakeDecision(1);
         }
 
         private void noButton_Click(object sender, EventArgs e)
         {
-            this.MakeDecision.ChangeTo(2);
+            this.MakeDecision(2);
         }
 
         private void MakeDecision(int decision)
@@ -47,9 +47,10 @@ namespace Example01
 
                 case 3:
                     if (decision == 1)
+                    {
                         this.currentScene.ChangeTo(4);
-
-                    MessageBox.Show{ "GG惹"};
+                        MessageBox.Show("GG惹");
+                    }
                     else
                         this.currentScene.ChangeTo(5);
                     break;
@@ -59,6 +60,13 @@ namespace Example01
                     break;
 
                 case 5:
+                    if (decision == 1)
+                        this.currentScene.ChangeTo(8);
+                    else
+                        this.currentScene.ChangeTo(3);
+                    break;
+
+                case 6:
                     if (decision == 1)
                         this.currentScene.ChangeTo(8);
                     else
