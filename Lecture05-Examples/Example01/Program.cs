@@ -15,7 +15,7 @@ namespace Example01
             Console.Write("請輸入溫度:");
             double temperature = double.Parse(Console.ReadLine());
 
-            data.Temperature(temperature);
+            data.Temperature = temperature;
             Console.WriteLine("您輸入的是{0}, 結果是{1}", temperature, data.Temperature);
         }
     }

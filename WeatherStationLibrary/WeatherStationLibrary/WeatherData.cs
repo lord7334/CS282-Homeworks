@@ -65,7 +65,7 @@ namespace WeatherStationLibrary
 
         public bool Equals(WeatherData other)
         {
-            return this.temperature == other.temperature
+            return this.Temperature == other.Temperature
                    && this.Humidity == other.Humidity
                    && this.Pressure == other.Pressure;
         }
