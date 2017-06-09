@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStationLibrary", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example01", "Example01\Example01.csproj", "{36D311E7-0D88-4BBC-8703-BAB1B2D19562}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example_Empolyee", "Example_Empolyee\Example_Empolyee.csproj", "{FFCF64FC-D654-4499-9CA3-07FAFD429F51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{36D311E7-0D88-4BBC-8703-BAB1B2D19562}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36D311E7-0D88-4BBC-8703-BAB1B2D19562}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36D311E7-0D88-4BBC-8703-BAB1B2D19562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFCF64FC-D654-4499-9CA3-07FAFD429F51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCF64FC-D654-4499-9CA3-07FAFD429F51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCF64FC-D654-4499-9CA3-07FAFD429F51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCF64FC-D654-4499-9CA3-07FAFD429F51}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
