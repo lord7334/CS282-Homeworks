@@ -17,16 +17,54 @@ namespace Example01
         public Form1()
         {
             InitializeComponent();
-            this.currentScene = new Scene(8);
-            this.scenePictureBox.Image = this.currentScene.GetImage();
+            this.currentScene = new Scene(this.scenePictureBox);
         }
 
         private void yesButton_Click(object sender, EventArgs e)
         {
+            this.MakeDecision.ChangeTo(1);
         }
 
         private void noButton_Click(object sender, EventArgs e)
         {
+            this.MakeDecision.ChangeTo(2);
+        }
+
+        private void MakeDecision(int decision)
+        {
+            switch (this.currentScene.Number)
+            {
+                case 1:
+                    this.currentScene.ChangeTo(2);
+                    break;
+
+                case 2:
+                    if (decision == 1)
+                        this.currentScene.ChangeTo(8);
+                    else
+                        this.currentScene.ChangeTo(3);
+                    break;
+
+                case 3:
+                    if (decision == 1)
+                        this.currentScene.ChangeTo(4);
+
+                    MessageBox.Show{ "GG惹"};
+                    else
+                        this.currentScene.ChangeTo(5);
+                    break;
+
+                case 4:
+
+                    break;
+
+                case 5:
+                    if (decision == 1)
+                        this.currentScene.ChangeTo(8);
+                    else
+                        this.currentScene.ChangeTo(3);
+                    break;
+            }
         }
     }
 }

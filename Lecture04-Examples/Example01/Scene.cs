@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.Windows.Forms;
 
 namespace Example01
 {
@@ -11,9 +12,13 @@ namespace Example01
     {
         public int Number;
 
-        public Scene(int number)
+        public PictureBox TargetPictureBox;
+
+        public Scene(PictureBox target)
         {
-            this.Number = number;
+            this.Number = 1;
+            this.TargetPictureBox = target;
+            this.TargetPictureBox.Image = this.GetImage();
         }
 
         public Image GetImage()
@@ -43,6 +48,7 @@ namespace Example01
         public void ChangeTo(int target)
         {
             this.Number = target;
+            this.TargetPictureBox.Image = this.GetImage();
         }
     }
 }
