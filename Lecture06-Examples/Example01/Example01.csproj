@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C07C24DC-00CD-4717-85D0-6E3BE9C5B6C8}</ProjectGuid>
+    <ProjectGuid>{4324150F-9EAD-418B-8997-BD1A945309B1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Lecture06_Examples</RootNamespace>
-    <AssemblyName>Lecture06-Examples</AssemblyName>
+    <RootNamespace>Example01</RootNamespace>
+    <AssemblyName>Example01</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EasyMathLibrary\EasyMathLibrary\EasyMathLibrary.csproj">
+      <Project>{0b440026-7568-4812-b67d-7489beee5eeb}</Project>
+      <Name>EasyMathLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

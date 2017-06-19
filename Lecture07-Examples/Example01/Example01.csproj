@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F8D8317B-E0BC-4D8B-81C3-50D3B15AFF48}</ProjectGuid>
+    <ProjectGuid>{A238779D-BB9A-4E0D-8313-657DAB331547}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Example03</RootNamespace>
-    <AssemblyName>Example03</AssemblyName>
+    <RootNamespace>Example01</RootNamespace>
+    <AssemblyName>Example01</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,28 +44,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomExtension.cs" />
+    <Compile Include="員工.cs" />
+    <Compile Include="空服員.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\EasyMathLibrary\EasyMathLibrary\EasyMathLibrary.csproj">
-      <Project>{0b440026-7568-4812-b67d-7489beee5eeb}</Project>
-      <Name>EasyMathLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WeatherStationLibrary\WeatherStationLibrary\WeatherStationLibrary.csproj">
-      <Project>{3867ec65-6e20-4177-be80-368676f253e7}</Project>
-      <Name>WeatherStationLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Example01\Example01.csproj">
-      <Project>{36d311e7-0d88-4bbc-8703-bab1b2d19562}</Project>
-      <Name>Example01</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Example02\Example02.csproj">
-      <Project>{a07f96b6-b1e5-47ef-89a8-368e09f6d3a2}</Project>
-      <Name>Example02</Name>
-    </ProjectReference>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

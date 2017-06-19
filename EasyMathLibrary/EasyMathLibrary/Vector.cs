@@ -81,40 +81,30 @@ namespace EasyMathLibrary
         public int CompareTo(object obj)
         {
             Vector other = obj as Vector;
-            switch (...)
+            switch (OrderByField)
             {
                 case OrderBy.X:
-                    if (this.X > other.X)
-                        return 1;
-                    else if (this.X < other.X)
-                        return -1;
-                    else
-                        return 0;
+                    return Compare(this.X, other.X);
 
                 case OrderBy.Y:
-                    if (this.Y > other.Y)
-                        return 1;
-                    else if (this.Y < other.Y)
-                        return -1;
-                    else
-                        return 0;
+                    return Compare(this.Y, other.Y);
 
                 case OrderBy.Length:
-                    if (this.Length > other.Length)
-                        return 1;
-                    else if (this.Length < other.Length)
-                        return -1;
-                    else
-                        return 0;
+                    return Compare(this.Length, other.Length);
 
                 default:
-                    if (this.Length > other.Length)
-                        return 1;
-                    else if (this.Length < other.Length)
-                        return -1;
-                    else
-                        return 0;
+                    return Compare(this.Length, other.Length);
             }
+        }
+
+        private int Compare(double a, double b)
+        {
+            if (a > b)
+                return 1;
+            else if (a < b)
+                return -1;
+            else
+                return 0;
         }
     }
 }

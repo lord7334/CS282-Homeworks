@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lecture06_Examples
+namespace PokemonLibrary
 {
-    class Program
+    public class Gym
     {
-        static void Main(string[] args)
-        {
-        }
     }
 }
