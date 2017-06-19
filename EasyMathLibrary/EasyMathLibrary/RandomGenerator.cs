@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace EasyMathLibrary
 {
-    public class RandomGenerator
+    public class Random
     {
-        private Random random;
+        private System.Random random;
 
-        public RandomGenerator()
+        public Random()
         {
-            random = new Random();
+            random = new System.Random();
         }
 
         public double NextDouble(double start, double end)
