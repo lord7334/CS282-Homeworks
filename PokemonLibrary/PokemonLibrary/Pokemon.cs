@@ -83,5 +83,10 @@ namespace PokemonLibrary
         }
 
         public abstract void Attack(Pokemon other);
+
+        public override string ToString()
+        {
+            return string.Format("這行在Pokemon\n Number:{0}, Name:{1}", NationalNumber, Name);
+        }
     }
 }

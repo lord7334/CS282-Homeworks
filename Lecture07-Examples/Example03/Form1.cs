@@ -19,16 +19,19 @@ namespace Example03
         {
             InitializeComponent();
             pokemons = new List<Pokemon>();
+            // pokemonSelector.SelectedIndex = 0;
         }
 
         private void createPokemonButton_Click(object sender, EventArgs e)
         {
+            string selectedItem = pokemonSelector.Items[pokemonSelector.SelectedIndex].ToString();
+            //  MessageBox.Show(selectedItem);
             PokemonPanel panel = new PokemonPanel();
-            Pokemon pokemon = PokemonFactory.Create("Bulbasaur");
+            Pokemon pokemon = PokemonFactory.Create(selectedItem);
             pokemons.Add(pokemon);
             int count = pokemons.Count;
             panel.Location = new Point(14 + 270 * (count - 1), 93);
-            panel.Render(pokemon);
+            panel.SetPokemon(pokemon);
             this.Controls.Add(panel);
         }
     }

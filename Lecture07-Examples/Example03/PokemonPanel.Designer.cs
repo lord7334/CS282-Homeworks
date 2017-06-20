@@ -42,6 +42,7 @@
             this.pokemonNameLabel.Size = new System.Drawing.Size(195, 30);
             this.pokemonNameLabel.TabIndex = 0;
             this.pokemonNameLabel.Text = "Pokemon Name";
+            this.pokemonNameLabel.Click += new System.EventHandler(this.pokemonNameLabel_Click);
             // 
             // pokemonHpLabel
             // 
