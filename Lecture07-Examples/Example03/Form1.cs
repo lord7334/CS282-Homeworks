@@ -34,5 +34,9 @@ namespace Example03
             panel.SetPokemon(pokemon);
             this.Controls.Add(panel);
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+        }
     }
 }
