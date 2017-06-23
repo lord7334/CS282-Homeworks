@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonLibrary", "..\PokemonLibrary\PokemonLibrary\PokemonLibrary.csproj", "{7B936970-EA70-437F-B6E6-60543D4E1B20}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example03", "..\Lecture07-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example01", "Example01\Example01.csproj", "{7F913ECF-B3E3-46DD-B9BE-EC867613BC04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartyCalculator", "..\Party Calculator\PartyCalculator\PartyCalculator.csproj", "{3785E823-86D5-4007-872B-9CA2DAF71076}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartyCalculator", "Party Calculator\PartyCalculator\PartyCalculator.csproj", "{3785E823-86D5-4007-872B-9CA2DAF71076}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
