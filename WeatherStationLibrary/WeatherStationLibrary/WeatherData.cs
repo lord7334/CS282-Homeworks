@@ -12,6 +12,8 @@ namespace WeatherStationLibrary
         private double humidity;
         public double Pressure;
 
+        public DateTime time;
+
         public double Temperature
         {
             get
